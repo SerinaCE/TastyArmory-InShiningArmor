@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>TA_BascinetKlapvisor</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetKlapvisor</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetKlapvisor_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_BascinetRound</defName>
+		<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetRound</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetRound_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="ArmorSmithableBase" Name="TA_Bascinet_Visor" Abstract="True">
+		<label>bascinet</label>
+		<description>Conical steel helmet with removable visor, it's shaped to deflect blows to the head at the cost of restiricting vision. The visor's large beak somewhat reduces it's restriction of breathing.</description>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>65</costStuffCount>
+		<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>13000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">6</Bulk>
+			<Mass>3.2</Mass>
+			<StuffEffectMultiplierArmor>3.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.12</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.12</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+      <parentTagDef>ApparelHead</parentTagDef>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+				<li MayRequire="CETeam.CombatExtended">OnHead</li>
+				<li MayRequire="CETeam.CombatExtended">StrappedHead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorDecent</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Bascinet_Visor">
+		<defName>TA_Bascinet</defName>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetBeak_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<randomStyleChance>0.5</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_BascinetKlapvisor</styleDef>
+			</li>
+			<li>
+				<chance>3</chance>
+				<styleDef>TA_BascinetRound</styleDef>
+			</li>
+		</randomStyle>
+		<equippedStatOffsets>
+			<AimingAccuracy>-0.5</AimingAccuracy>
+			<MeleeHitChance>-2</MeleeHitChance>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetBeak</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<SwitchTo>TA_BascinetOpen</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_Bascinet/TA_Bascinet_button_open</graphicPath>
+				<Label>open visor</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="TA_Bascinet_Visor">
+		<defName>TA_BascinetOpen</defName>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetOpen_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker Inherit="False" />
+		<apparel>
+			<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetOpen</wornGraphicPath>
+		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<SwitchTo>TA_Bascinet</SwitchTo>
+				<graphicPath>Apparel/Helmets/TA_Bascinet/TA_Bascinet_button_close</graphicPath>
+				<Label>close visor</Label>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<parts>
+							<li>Jaw</li>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+						<parts>
+							<li>Jaw</li>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

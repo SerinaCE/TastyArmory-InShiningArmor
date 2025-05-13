@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_CE</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_CE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_Checker</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_Checker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_Eagle</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_Eagle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_GrillDark</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_GrillDark</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_GrillWhite</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_GrillWhite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_ShieldEmblem</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_ShieldEmblem</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_SlashWhite</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_SlashWhite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_StripesWhite</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_StripesWhite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_Sun</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_Sun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>TA_PaviseShield_UpWhite</defName>
+		<graphicData>
+			<texPath>Apparel/Shield/TA_Paveze/TA_Paveze_UpWhite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+</Defs>

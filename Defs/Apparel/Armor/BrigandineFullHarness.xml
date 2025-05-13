@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TA_BrigandinePlate</defName>
+		<label>brigandine plate armor</label>
+		<description>Brigandine vest with plate limb cover. Compared to proper full plate armor, next best thing to a full plate harness, slighly cheaper.</description>
+		<graphicData>
+			<texPath>Apparel/Armor/TA_BrigandineFullHarness/TA_BrigandineFullHarness_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<costStuffCount>170</costStuffCount>
+		<stuffCategories>
+			<li>Steeled</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<statBases>
+			<MaxHitPoints>375</MaxHitPoints>
+			<WorkToMake>40000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">70</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">6</WornBulk>
+			<Mass>18.5</Mass>
+			<StuffEffectMultiplierArmor>2.8</StuffEffectMultiplierArmor>
+			<Insulation_Cold>15</Insulation_Cold>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>23</layer>
+				</defaultData>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Armor/TA_BrigandineFullHarness/TA_BrigandineFullHarness</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Middle</li>
+				<li>TA_UnderArmor</li>
+				<li>TA_BootGlove</li>
+			</layers>
+			<tags>
+				<li>MedievalArmorAdvanced</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>			
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+						<parts>
+							<li>Shoulder</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+						<parts>
+							<li>Torso</li>
+							<li>Shoulder</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+						<parts>
+							<li>Foot</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+						<parts>
+							<li>Foot</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<colorGenerator Class="ColorGenerator_Options" />
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>

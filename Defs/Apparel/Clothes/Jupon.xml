@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+	<ThingStyleDef>
+		<defName>TA_JuponHalf</defName>
+		<wornGraphicPath>Apparel/Clothes/TA_JuponHalf/TA_JuponHalf</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_JuponHalf/TA_JuponHalf_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_JuponQuarter</defName>
+		<wornGraphicPath>Apparel/Clothes/TA_JuponQuarter/TA_JuponQuarter</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_JuponQuarter/TA_JuponQuarter_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_JuponStripes</defName>
+		<wornGraphicPath>Apparel/Clothes/TA_JuponStripes/TA_JuponStripes</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_JuponStripes/TA_JuponStripes_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+  
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>TA_Jupon</defName>
+		<label>jupon</label>
+		<description>light padded jacket worn by knights their plate harness, for battlefield identification and protection from arrows spalling on their armor</description>
+		<graphicData>
+			<texPath>Apparel/Clothes/TA_JuponPlain/TA_JuponPlain_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>      
+		</graphicData>
+		<randomStyleChance>0.6</randomStyleChance>
+		<randomStyle>
+			<li>
+				<styleDef>TA_JuponHalf</styleDef>
+			</li>
+			<li>
+				<styleDef>TA_JuponQuarter</styleDef>
+			</li>	
+			<li>
+				<styleDef>TA_JuponStripes</styleDef>
+			</li>
+		</randomStyle>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<smeltable>false</smeltable>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>50</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">2</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
+			<Mass>2.5</Mass>
+			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.40</ArmorRating_Sharp>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>24</layer>
+				</defaultData>
+			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Clothes/TA_JuponPlain/TA_JuponPlain</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+</Defs>
