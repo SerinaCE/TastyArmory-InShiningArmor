@@ -65,6 +65,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Armet/TA_ArmetDown_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
 			<AimingAccuracy>-0.4</AimingAccuracy>
@@ -117,10 +118,14 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Armet/TA_ArmetUp_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker Inherit="False" />
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Armet/TA_ArmetUp</wornGraphicPath>
+			<!--renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags-->
 		</apparel>
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">

@@ -7,6 +7,7 @@
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_ArmingDoublet/TA_ArmingDoublet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<possessionCount>1</possessionCount>
 		<recipeMaker>
@@ -28,8 +29,8 @@
 			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
 			<Mass>2.5</Mass>
-			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.40</ArmorRating_Sharp>
+			<StuffEffectMultiplierArmor>2.5</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.35</ArmorRating_Sharp>
 			<ArmorRating_Blunt MayRequire="CETeam.CombatExtended">0.8</ArmorRating_Blunt>
 			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>

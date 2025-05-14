@@ -30,10 +30,13 @@
 			<li>ApparelArmor</li>
 		</thingCategories>
 		<apparel>
-      <parentTagDef>ApparelHead</parentTagDef>
+			<parentTagDef>ApparelHead</parentTagDef>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
 			<layers>
 				<li>Overhead</li>
 				<li MayRequire="CETeam.CombatExtended">StrappedHead</li>
@@ -41,11 +44,11 @@
 			<tags>
 				<li>MedievalMilitary</li>
 				<li>MedievalArmorDecent</li>
-        <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
-        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
-        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
-        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
-        <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier7</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -62,6 +65,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_VisorSallet/TA_VisorSalletDown_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
 			<AimingAccuracy>-0.4</AimingAccuracy>
@@ -126,6 +130,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_VisorSallet/TA_VisorSalletUp_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker Inherit="False" />
 		<apparel>

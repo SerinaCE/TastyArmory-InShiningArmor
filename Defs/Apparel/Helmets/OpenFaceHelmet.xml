@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_OpenSallet_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -17,6 +18,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatA_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -26,6 +28,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatB_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 

@@ -7,7 +7,6 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetKlapvisor_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -81,6 +80,7 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetBeak_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<randomStyleChance>0.5</randomStyleChance>
 		<randomStyle>
@@ -144,10 +144,14 @@
 		<graphicData>
 			<texPath>Apparel/Helmets/TA_Bascinet/TA_BascinetOpen_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker Inherit="False" />
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetOpen</wornGraphicPath>
+			<!--renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags-->
 		</apparel>
 		<comps>
 			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel" MayRequire="oskarpotocki.vanillafactionsexpanded.core">

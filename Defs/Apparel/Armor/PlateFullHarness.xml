@@ -8,12 +8,13 @@
 			<graphicData>
 				<texPath>Apparel/Armor/TA_PlateFullHarness/TA_PlateFullHarness_ico</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
+				<drawSize>0.8</drawSize>
 			</graphicData>
 			<recipeMaker>
 				<researchPrerequisite>PlateArmor</researchPrerequisite>
 				<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 				<skillRequirements>
-					<Crafting>11</Crafting>
+					<Crafting>10</Crafting>
 				</skillRequirements>
 			</recipeMaker>
 			<techLevel>Medieval</techLevel>

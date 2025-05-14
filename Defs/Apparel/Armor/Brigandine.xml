@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Apparel/Armor/TA_BrigandineVest/TA_BrigandineVest_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>

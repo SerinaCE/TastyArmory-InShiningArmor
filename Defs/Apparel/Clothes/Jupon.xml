@@ -8,6 +8,7 @@
 			<texPath>Apparel/Clothes/TA_JuponHalf/TA_JuponHalf_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -17,6 +18,7 @@
 			<texPath>Apparel/Clothes/TA_JuponQuarter/TA_JuponQuarter_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef>
@@ -26,6 +28,7 @@
 			<texPath>Apparel/Clothes/TA_JuponStripes/TA_JuponStripes_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 	</ThingStyleDef>
   
@@ -36,7 +39,8 @@
 		<graphicData>
 			<texPath>Apparel/Clothes/TA_JuponPlain/TA_JuponPlain_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>      
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.8</drawSize>      
 		</graphicData>
 		<randomStyleChance>0.6</randomStyleChance>
 		<randomStyle>
@@ -65,9 +69,9 @@
 			<WorkToMake>50</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">2</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">0</WornBulk>
-			<Mass>2.5</Mass>
-			<StuffEffectMultiplierArmor>3</StuffEffectMultiplierArmor>
-			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.40</ArmorRating_Sharp>
+			<Mass>2.3</Mass>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp MayRequire="CETeam.CombatExtended">0.30</ArmorRating_Sharp>
 			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>

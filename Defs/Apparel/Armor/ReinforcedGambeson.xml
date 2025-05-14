@@ -8,6 +8,7 @@
 		<graphicData>
 			<texPath>Apparel/Armor/TA_ReinforcedGambeson/TA_ReinforcedGambeson_ico</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>Smithing</researchPrerequisite>
