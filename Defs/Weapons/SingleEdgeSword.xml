@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>TA_Falchion</defName>
+		<overrideLabel>falchion</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Falchion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_Messer</defName>
+		<overrideLabel>messer</overrideLabel>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Messer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>TA_SingleEdgeSword</defName>
+		<label>single edged sword</label>
+		<description>.</description>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Falchion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.92</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_Falchion</styleDef>
+			</li>
+			<li>
+				<chance>1</chance>
+				<styleDef>TA_Messer</styleDef>
+			</li>
+		</randomStyle>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.6</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.3</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.35</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.25</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>edge</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		</tools>
+		<modExtensions MayRequire="CETeam.CombatExtended">
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.1,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

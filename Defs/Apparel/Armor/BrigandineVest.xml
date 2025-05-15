@@ -23,7 +23,7 @@
 		</costList>
 		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.04</MeleeDodgeChance>
@@ -33,7 +33,7 @@
 			<WorkToMake>11000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
-			<Mass>8.5</Mass>
+			<Mass>8</Mass>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
 			<Insulation_Cold>10</Insulation_Cold>
 			<EquipDelay>4</EquipDelay>
@@ -56,7 +56,7 @@
 			<wornGraphicPath>Apparel/Armor/TA_BrigandineVest/TA_BrigandineVest</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
-				<li>Shell</li>
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>MedievalMilitary</li>

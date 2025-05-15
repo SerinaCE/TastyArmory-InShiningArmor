@@ -1,52 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!--Spear-->
+	<!--TA_SingleEdgeSword-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_Spear"]/tools</xpath>
+		<xpath>/Defs/ThingDef[defName="TA_SingleEdgeSword"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
-					<label>shaft</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>3</power>
-					<cooldownTime>1.50</cooldownTime>
-					<chanceFactor>0.05</chanceFactor>
-					<armorPenetrationBlunt>0.55</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>shaft</label>
+					<label>handle</label>
 					<capacities>
 						<li>Poke</li>
 					</capacities>
-					<power>4</power>
-					<cooldownTime>1.6</cooldownTime>
-					<chanceFactor>0.05</chanceFactor>
-					<armorPenetrationBlunt>0.55</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+					<power>2</power>
+					<chanceFactor>0.33</chanceFactor>
+					<cooldownTime>1.44</cooldownTime>
+					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
+					<label>point</label>
 					<capacities>
 						<li>Stab</li>
 					</capacities>
+					<power>19</power>
+					<cooldownTime>1.44</cooldownTime>
+					<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
+					<armorPenetrationSharp>0.5</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>edge</label>
+					<capacities>
+						<li>Cut</li>
+					</capacities>
 					<power>20</power>
-					<cooldownTime>1.6</cooldownTime>
-					<chanceFactor>0.90</chanceFactor>
-					<armorPenetrationBlunt>2.5</armorPenetrationBlunt>
-					<armorPenetrationSharp>1.65</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+					<cooldownTime>1.34</cooldownTime>
+					<armorPenetrationBlunt>0.956</armorPenetrationBlunt>
+					<armorPenetrationSharp>0.43</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
 	</Operation>
 
-	<!--Bill-->
+	<!--TA_CutAndThrustPolearm-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_Spear"]/tools</xpath>
+		<xpath>/Defs/ThingDef[defName="TA_CutAndThrustPolearm"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -87,9 +86,9 @@
 		</value>
 	</Operation>
 
-	<!--Greataxe-->
+	<!--T_Pollaxe-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_Greataxe"]/tools</xpath>
+		<xpath>/Defs/ThingDef[defName="TA_Pollaxe"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -104,14 +103,24 @@
 					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
+					<label>point</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>18</power>
+					<cooldownTime>1.27</cooldownTime>
+					<armorPenetrationBlunt>1.96</armorPenetrationBlunt>
+					<armorPenetrationSharp>3.92</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
 					<label>head</label>
 					<capacities>
 						<li>Blunt</li>
 					</capacities>
 					<power>20</power>
-					<chanceFactor>0.3</chanceFactor>
 					<cooldownTime>2.73</cooldownTime>
-					<armorPenetrationBlunt>5.6</armorPenetrationBlunt>
+					<armorPenetrationBlunt>7.84</armorPenetrationBlunt>
 					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
@@ -120,19 +129,18 @@
 						<li>Cut</li>
 					</capacities>
 					<power>29</power>
-					<chanceFactor>1</chanceFactor>
 					<cooldownTime>2.37</cooldownTime>
 					<armorPenetrationBlunt>3.24</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.85</armorPenetrationSharp>
+					<armorPenetrationSharp>0.72</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
 	</Operation>
 
-	<!--Handaxe-->
+	<!--TA_HorsemansAxe-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="TA_Handaxe"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -149,13 +157,14 @@
 				<li Class="CombatExtended.ToolCE">
 					<label>head</label>
 					<capacities>
-						<li>Blunt</li>
+						<li>Stab</li>
 					</capacities>
-					<power>11</power>
-					<cooldownTime>1.75</cooldownTime>
-					<chanceFactor>0.25</chanceFactor>
-					<armorPenetrationBlunt>3.6</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+					<power>15</power>
+					<cooldownTime>1.80</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>2.7</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
 					<label>edge</label>
@@ -173,89 +182,89 @@
 		</value>
 	</Operation>
 
-	<!--Arming sword-->
+	<!--TA_Warhammer-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_ArmingSword"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
-					<label>handle</label>
+					<label>shaft</label>
 					<capacities>
 						<li>Poke</li>
 					</capacities>
-					<power>3</power>
-					<cooldownTime>1.29</cooldownTime>
+					<power>2</power>
+					<cooldownTime>1.59</cooldownTime>
 					<chanceFactor>0.05</chanceFactor>
-					<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+					<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
 				</li>
 				<li Class="CombatExtended.ToolCE">
-					<label>point</label>
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>20</power>
+					<cooldownTime>2.35</cooldownTime>
+					<chanceFactor>0.95</chanceFactor>
+					<armorPenetrationBlunt>9.625</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
 					<capacities>
 						<li>Stab</li>
 					</capacities>
-					<power>20</power>
-					<cooldownTime>1.46</cooldownTime>
-					<chanceFactor>0.5</chanceFactor>
-					<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
-					<armorPenetrationSharp>1.2</armorPenetrationSharp>
+					<power>15</power>
+					<cooldownTime>1.80</cooldownTime>
+					<chanceFactor>0.7</chanceFactor>
+					<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+					<armorPenetrationSharp>2.7</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>edge</label>
-					<capacities>
-						<li>Cut</li>
-					</capacities>
-					<power>19</power>
-					<cooldownTime>1.46</cooldownTime>
-					<chanceFactor>0.45</chanceFactor>
-					<armorPenetrationBlunt>1.15</armorPenetrationBlunt>
-					<armorPenetrationSharp>0.65</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
 	</Operation>
-	
-	<!--Scramasax-->
+
+	<!--TA_Pike-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef[defName="TA_Scramasax"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
 		<value>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>2</power>
-				<chanceFactor>0.33</chanceFactor>
-				<cooldownTime>1.44</cooldownTime>
-				<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.2</cooldownTime>
-				<armorPenetrationBlunt>0.425</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.65</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>17</power>
-				<cooldownTime>1.3</cooldownTime>
-				<armorPenetrationBlunt>0.956</armorPenetrationBlunt>
-				<armorPenetrationSharp>0.43</armorPenetrationSharp>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>2.30</cooldownTime>
+					<chanceFactor>0.15</chanceFactor>
+					<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>shaft</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>4</power>
+					<cooldownTime>1.79</cooldownTime>
+					<chanceFactor>0.05</chanceFactor>
+					<armorPenetrationBlunt>1</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Stab</li>
+					</capacities>
+					<power>29</power>
+					<cooldownTime>1.9</cooldownTime>
+					<chanceFactor>0.90</chanceFactor>
+					<armorPenetrationBlunt>4</armorPenetrationBlunt>
+					<armorPenetrationSharp>2.75</armorPenetrationSharp>
+					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+				</li>
+			</tools>
 		</value>
 	</Operation>
 

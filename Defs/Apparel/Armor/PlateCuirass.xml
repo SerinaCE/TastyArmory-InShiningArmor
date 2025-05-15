@@ -20,7 +20,7 @@
 		<techLevel>Medieval</techLevel>
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.04</MeleeDodgeChance>
@@ -30,7 +30,7 @@
 			<WorkToMake>16000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">20</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">4</WornBulk>
-			<Mass>7.5</Mass>
+			<Mass>7</Mass>
 			<StuffEffectMultiplierArmor>2.2</StuffEffectMultiplierArmor>
 			<Insulation_Cold>4</Insulation_Cold>
 			<EquipDelay>4</EquipDelay>

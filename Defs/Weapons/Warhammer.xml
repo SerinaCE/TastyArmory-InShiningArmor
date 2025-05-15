@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingStyleDef>
+		<defName>TA_WarhammerFancy</defName>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_WarhammerFancy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+	<defName>TA_Warhammer</defName>
+	<label>warhammer</label>
+	<description>.</description>
+	<graphicData>
+		<texPath>Weapons/Melee/TA_Warhammer</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>0.87</drawSize>
+	</graphicData>
+	<randomStyleChance>0.3</randomStyleChance>
+	<randomStyle>
+		<li>
+			<chance>1</chance>
+			<styleDef>TA_WarhammerFancy</styleDef>
+		</li>
+	</randomStyle>
+	<equippedAngleOffset>-25</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+		<weaponTags Inherit="False">
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>1.2</Mass>
+			<Bulk MayRequire="CETeam.CombatExtended">5.5</Bulk>
+			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.33</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">0.45</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">0.19</MeleeParryChance>
+			<MeleeDodgeChance MayRequire="CETeam.CombatExtended">0.2</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+		  <li>
+			<label>handle</label>
+			<capacities>
+			  <li>Poke</li>
+			</capacities>
+			<power>9</power>
+			<cooldownTime>2</cooldownTime>
+		  </li>
+		  <li>
+			<label>head</label>
+			<labelUsedInLogging>false</labelUsedInLogging>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>18.7</power>
+			<armorPenetration>0.20</armorPenetration>
+			<cooldownTime>2.5</cooldownTime>
+		  </li>
+		</tools>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension" MayRequire="CETeam.CombatExtended">
+				<DrawOffset>0.1,-0.1</DrawOffset>
+			</li>
+		</modExtensions>
+  </ThingDef>
+	
+</Defs>

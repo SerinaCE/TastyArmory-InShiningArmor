@@ -20,14 +20,14 @@
 			<techLevel>Medieval</techLevel>
 			<costStuffCount>200</costStuffCount>
 			<stuffCategories>
-				<li>Steeled</li>
+				<li>Metallic</li>
 			</stuffCategories>
 			<equippedStatOffsets>
 				<MeleeDodgeChance>-0.15</MeleeDodgeChance>
 			</equippedStatOffsets>
 			<statBases>
-				<MaxHitPoints>400</MaxHitPoints>
-				<WorkToMake>50000</WorkToMake>
+				<MaxHitPoints>420</MaxHitPoints>
+				<WorkToMake>52000</WorkToMake>
 				<Bulk MayRequire="CETeam.CombatExtended">70</Bulk>
 				<WornBulk MayRequire="CETeam.CombatExtended">6</WornBulk>
 				<Mass>17.5</Mass>

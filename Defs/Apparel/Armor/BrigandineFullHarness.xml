@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>TA_BrigandinePlate</defName>
-		<label>brigandine plate armor</label>
+		<defName>TA_BrigandineFullHarness</defName>
+		<label>brigandine plate harness</label>
 		<description>Brigandine vest with plate limb cover. Compared to proper full plate armor, next best thing to a full plate harness, slighly cheaper.</description>
 		<graphicData>
 			<texPath>Apparel/Armor/TA_BrigandineFullHarness/TA_BrigandineFullHarness_ico</texPath>
@@ -22,14 +22,14 @@
 		</costList>
 		<costStuffCount>170</costStuffCount>
 		<stuffCategories>
-			<li>Steeled</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>375</MaxHitPoints>
-			<WorkToMake>40000</WorkToMake>
+			<WorkToMake>43000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">70</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">6</WornBulk>
 			<Mass>18.5</Mass>

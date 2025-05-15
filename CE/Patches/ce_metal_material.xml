@@ -3,9 +3,8 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  @Name="TA_NasalBase" or
-                  defName="TA_MailleVest" or
-                  defName="TA_CoatOfPlates" or
+                  defName="TA_BrigandineVest" or
+                  defName="TA_BrigandineFullHarness" or
                   defName="TA_Greathelm" or
                   defName="TA_KettleHat" or
                   defName="TA_CoifMaille" or
