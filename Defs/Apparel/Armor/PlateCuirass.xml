@@ -27,7 +27,7 @@
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>200</MaxHitPoints>
-			<WorkToMake>16000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">20</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">4</WornBulk>
 			<Mass>7</Mass>

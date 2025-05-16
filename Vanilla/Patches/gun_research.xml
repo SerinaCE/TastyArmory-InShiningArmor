@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+      
+
+      <!--Clothes-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="Vanilla_GunpowderWeaponry" or
+                  defName="TA_Handgonne"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+      
+</Patch>

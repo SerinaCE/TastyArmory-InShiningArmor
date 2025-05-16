@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- ===== Tools ===== -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[
-			defName="TA_HeavySteelCrossbw"]/tools</xpath>
-		<value>
-			<tools>
-				<li Class="CombatExtended.ToolCE">
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>7</power>
-					<cooldownTime>1.6</cooldownTime>
-					<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
-				</li>
-			</tools>
-		</value>
-	</Operation>
-
-	<!-- ===== Composite Crossbow ===== -->
+	<!-- ===== HeavySteelCrossbw ===== -->
 
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
 		<defName>TA_HeavySteelCrossbw</defName>
@@ -27,7 +9,7 @@
 			<Bulk MayRequire="CETeam.CombatExtended">9</Bulk>
 			<SwayFactor>1.25</SwayFactor>
 			<ShotSpread>0.155</ShotSpread>
-			<SightsEfficiency>1</SightsEfficiency>
+			<SightsEfficiency>0.95</SightsEfficiency>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		</statBases>
 		<Properties>
@@ -50,6 +32,144 @@
 			<li>CE_XBow</li>
 		</weaponTags>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_HeavySteelCrossbw"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.6</cooldownTime>
+					<armorPenetrationBlunt>0.65</armorPenetrationBlunt>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+	<!-- ===== SiegeArquebus ===== -->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>TA_SiegeArquebus</defName>
+		<statBases>
+			<Mass>7.50</Mass>
+			<Bulk>14.50</Bulk>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>2.10</SwayFactor>
+			<SightsEfficiency>0.95</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>2.3</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_75CalBall370mps</defaultProjectile>
+			<warmupTime>1.7</warmupTime>
+			<range>25</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>12</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>1</magazineSize>
+			<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+			<reloadTime>8</reloadTime>
+			<ammoSet>AmmoSet_TA_SiegeArquebus</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedDecent</li>
+			<li>MedievalRangedAdvanced</li>
+			<li>Bipod_AMR</li>
+		</weaponTags>
+	</Operation>
+
+	<!--Handgonne-->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>TA_Handgonne</defName>
+		<statBases>
+			<SightsEfficiency>0.70</SightsEfficiency>
+			<ShotSpread>0.45</ShotSpread>
+			<SwayFactor>2</SwayFactor>
+			<Mass>3</Mass>
+			<Bulk>11.00</Bulk>
+			<RangedWeapon_Cooldown>0.33</RangedWeapon_Cooldown>
+		</statBases>
+		<Properties>
+			<recoilAmount>3.75</recoilAmount>				
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_SlowMusketBall</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>20</range>
+			<soundCast>Shot_CE_Musket</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>1</magazineSize>
+			<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
+			<reloadTime>7</reloadTime>
+			<ammoSet>AmmoSet_TA_Handgonne</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags Inherit="False">
+			<li>NeolithicRangedDecent</li>
+			<li>MedievalRangedAdvanced</li>
+		</weaponTags>
+	</Operation>
+
+	<!--Melee tools-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="TA_SiegeArquebus" or
+			defName="TA_Handgonne"
+			]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
+		</value>
+	</Operation>
+
+
+
 	
       
 </Patch>

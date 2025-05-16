@@ -11,7 +11,7 @@
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<researchPrerequisite>Smithing</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
 			<skillRequirements>
 				<Crafting>4</Crafting>
@@ -30,7 +30,7 @@
 		</equippedStatOffsets>
 		<statBases>
 			<MaxHitPoints>170</MaxHitPoints>
-			<WorkToMake>11000</WorkToMake>
+			<WorkToMake>15000</WorkToMake>
 			<Bulk MayRequire="CETeam.CombatExtended">15</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">3</WornBulk>
 			<Mass>8</Mass>

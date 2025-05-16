@@ -5,11 +5,12 @@
 		<xpath>Defs/ThingDef[
                   defName="TA_BrigandineVest" or
                   defName="TA_BrigandineFullHarness" or
-                  defName="TA_Greathelm" or
-                  defName="TA_KettleHat" or
-                  defName="TA_CoifMaille" or
-                  defName="TA_MailleHoses" or
-                  defName="TA_MailleMittens"
+                  defName="TA_PlateCuirass" or
+                  defName="TA_PlateFullHarness" or
+                  @Name="TA_Armet_Visor" or
+                  @Name="TA_Bascinet_Visor" or
+                  defName="TA_Sallet_Visor" or
+                  defName="TA_OpenFaceHelmet"
 			]/stuffCategories</xpath>
 		<value>
 			<stuffCategories>
@@ -20,12 +21,11 @@
 
       <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-            defName="TA_Greataxe" or
-            defName="TA_Bill" or
-            defName="TA_ArmingSword" or
-            defName="TA_Scramasax" or
-            defName="TA_Handaxe" or
-            defName="TA_Spear"]/stuffCategories</xpath>
+            defName="TA_CutAndThrustPolearm" or
+            defName="TA_Pike" or
+            defName="TA_Pollaxe" or
+            defName="TA_SingleEdgeSword" or
+            defName="TA_Warhammer"]/stuffCategories</xpath>
 		<value>
 			<stuffCategories>
                 <li>Metallic_Weapon</li>
