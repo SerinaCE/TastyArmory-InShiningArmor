@@ -36,7 +36,7 @@
 		</costList>
 		<costStuffCount>50</costStuffCount>
 		<stuffCategories>
-			<li>Metallic_Weapon</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
@@ -44,7 +44,7 @@
 		<statBases>
 			<WorkToMake>10000</WorkToMake>
 			<Mass>2.7</Mass>
-			<Bulk>10</Bulk>
+			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
 			<MeleeCounterParryBonus MayRequire="CETeam.CombatExtended">0.45</MeleeCounterParryBonus>
 			<VEF_MeleeWeaponRange MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">3</VEF_MeleeWeaponRange>
 		</statBases>

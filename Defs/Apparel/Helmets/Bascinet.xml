@@ -94,8 +94,8 @@
 			</li>
 		</randomStyle>
 		<equippedStatOffsets>
-			<AimingAccuracy>-0.5</AimingAccuracy>
-			<MeleeHitChance>-2</MeleeHitChance>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.5</AimingAccuracy>
+			<MeleeHitChance MayRequire="CETeam.CombatExtended">-2</MeleeHitChance>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Bascinet/TA_BascinetBeak</wornGraphicPath>

@@ -4,7 +4,7 @@
   <!-- ==================== Flintlock Musket ==================== -->
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>TA_Bullet_SiegeArquebus</defName>
+		<defName>TA_Bullet_SiegeHarkebus</defName>
 		<label>musket bullet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
@@ -20,12 +20,12 @@
 	</ThingDef>
 
   <ThingDef ParentName="BaseMakeableGun">
-    <defName>TA_SiegeArquebus</defName>
+    <defName>TA_SiegeHarkebus</defName>
     <label>siege arquebus</label>
     <description>proto-musket.</description>
     <techLevel>Medieval</techLevel>
     <graphicData>
-      <texPath>Weapons/Ranged/TA_SiegeArquebus</texPath>
+      <texPath>Weapons/Ranged/TA_SiegeHarkebus</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
     </graphicData>
@@ -69,7 +69,7 @@
 		<li>
 			<verbClass>Verb_Shoot</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>TA_Bullet_SiegeArquebus</defaultProjectile>
+			<defaultProjectile>TA_Bullet_SiegeHarkebus</defaultProjectile>
 			<warmupTime>1.5</warmupTime>
 			<range>34.9</range>
 			<soundCast>Shot_Revolver</soundCast>

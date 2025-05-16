@@ -9,7 +9,7 @@
                   defName="TA_PlateFullHarness" or
                   @Name="TA_Armet_Visor" or
                   @Name="TA_Bascinet_Visor" or
-                  defName="TA_Sallet_Visor" or
+                  @Name="TA_Sallet_Visor" or
                   defName="TA_OpenFaceHelmet"
 			]/stuffCategories</xpath>
 		<value>

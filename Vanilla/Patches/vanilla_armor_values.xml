@@ -5,33 +5,25 @@
       <!--Clothes-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_Dress" or
-                  defName="TA_FurhatNordic" or
-                  defName="TA_Headscarf"
+                  defName="TA_Chaperon"
                   ]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 
-      <!--Padded-->
-	<Operation Class="PatchOperationRemove">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_Aketon" or
-                  defName="TA_Surcoat"
-			]/statBases/ArmorRating_Sharp
-            </xpath>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[
-                  defName="TA_Aketon" or
-                  defName="TA_Surcoat"
-			]/statBases/ArmorRating_Blunt
-            </xpath>
+                  defName="TA_Jupon"
+                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
+		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_Aketon"
+                  defName="TA_ArmingDoublet" or
+                  defName="TA_ReinforcedGambeson"
                   ]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
@@ -39,10 +31,18 @@
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_Surcoat"
-                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+                  defName="TA_ReinforcedGambeson"
+                  ]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_ReinforcedGambeson"
+                  ]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
@@ -60,7 +60,8 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_CoatOfPlates"
+                  defName="TA_PlateBoots" or
+				  defName="TA_PlateMittens"
 			]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
@@ -70,19 +71,21 @@
       <!--Helmet-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_KettleHat"
+                  defName="TA_OpenFaceHelmet"
 			]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.78</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_Greathelm"
+				@Name="TA_Armet_Visor" or
+				@Name="TA_Bascinet_Visor" or
+				@Name="TA_Sallet_Visor"
 			]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>1.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.93</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 

@@ -5,11 +5,11 @@
       <!--Clothes-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="Vanilla_GunpowderWeaponry" or
+                  defName="TA_SiegeHarkebus" or
                   defName="TA_Handgonne"
-                  ]/statBases/StuffEffectMultiplierArmor</xpath>
+                  ]/recipeMaker/researchPrerequisite</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+			<researchPrerequisite>Vanilla_GunpowderWeaponry</researchPrerequisite>
 		</value>
 	</Operation>
       

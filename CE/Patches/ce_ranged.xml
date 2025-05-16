@@ -50,9 +50,9 @@
 		</value>
 	</Operation>
 
-	<!-- ===== SiegeArquebus ===== -->
+	<!-- ===== SiegeHarkebus ===== -->
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>TA_SiegeArquebus</defName>
+		<defName>TA_SiegeHarkebus</defName>
 		<statBases>
 			<Mass>7.50</Mass>
 			<Bulk>14.50</Bulk>
@@ -76,7 +76,7 @@
 			<magazineSize>1</magazineSize>
 			<AmmoGenPerMagOverride>3</AmmoGenPerMagOverride>
 			<reloadTime>8</reloadTime>
-			<ammoSet>AmmoSet_TA_SiegeArquebus</ammoSet>
+			<ammoSet>AmmoSet_TA_SiegeHarkebus</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>AimedShot</aiAimMode>
@@ -128,7 +128,7 @@
 	<!--Melee tools-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-			defName="TA_SiegeArquebus" or
+			defName="TA_SiegeHarkebus" or
 			defName="TA_Handgonne"
 			]/tools</xpath>
 		<value>

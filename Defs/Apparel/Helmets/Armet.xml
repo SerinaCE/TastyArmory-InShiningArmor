@@ -68,8 +68,8 @@
 			<drawSize>0.8</drawSize>
 		</graphicData>
 		<equippedStatOffsets>
-			<AimingAccuracy>-0.4</AimingAccuracy>
-			<MeleeHitChance>-2</MeleeHitChance>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.4</AimingAccuracy>
+			<MeleeHitChance MayRequire="CETeam.CombatExtended">-2</MeleeHitChance>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Apparel/Helmets/TA_Armet/TA_ArmetDown</wornGraphicPath>
