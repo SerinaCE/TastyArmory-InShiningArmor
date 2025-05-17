@@ -3,13 +3,13 @@
 
 	<!--Bow-->
 	<ThingDef ParentName="BaseWeaponNeolithic" MayRequireAnyOf="al9000.highmedieval,al9000.shiningarmor">    
-		<defName>TA_HeavySteelCrossbw</defName>
+		<defName>TA_HeavySteelCrossbow</defName>
 		<label>heavy steel crossbow</label>
 		<description>Properly made military crossbow, limbs similar in construction to eastern composite bows but much thicker and shorter.</description>
 		<graphicData>
-      <texPath>Weapons/Ranged/TA_CompositeCrossbow</texPath>
+      <texPath>Weapons/Ranged/TA_HeavySteelCrossbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.05</drawSize>
 		</graphicData>
     <soundInteract>Bow_Large</soundInteract>
     <costList>
@@ -26,10 +26,11 @@
       <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags Inherit="False">
-        <li>NeolithicRangedHeavy</li>
-        <li>NeolithicRangedChief</li>
-        <li>MedievalRangedDecent</li>
-        <li>MedievalRangedAdvanced</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+      <li>MedievalRangedDecent</li>
+      <li>MedievalRangedAdvanced</li>
+      <li>CE_OneHandedWeapon</li>
     </weaponTags>
     <weaponClasses>
       <li>Ranged</li>

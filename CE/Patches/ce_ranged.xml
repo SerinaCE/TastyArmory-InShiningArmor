@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- ===== HeavySteelCrossbw ===== -->
+	<!-- ===== HeavySteelCrossbow ===== -->
 
 	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-		<defName>TA_HeavySteelCrossbw</defName>
+		<defName>TA_HeavySteelCrossbow</defName>
 		<statBases>
 			<Bulk MayRequire="CETeam.CombatExtended">9</Bulk>
 			<SwayFactor>1.25</SwayFactor>
@@ -17,12 +17,12 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Projectile_CrossbowBoltHeavySteelBow_Steel</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>35</range>
+			<range>36</range>
 			<soundCast>Bow_Large</soundCast>
 		</Properties>
 		<AmmoUser>
 			<magazineSize>1</magazineSize>
-			<reloadTime>6</reloadTime>
+			<reloadTime>6.5</reloadTime>
 			<ammoSet>AmmoSet_CrossbowBoltHeavySteelBow</ammoSet>
 		</AmmoUser>
 		<FireModes>
@@ -35,7 +35,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-			defName="TA_HeavySteelCrossbw"]/tools</xpath>
+			defName="TA_HeavySteelCrossbow"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
