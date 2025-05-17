@@ -49,22 +49,30 @@
       <!--Armor-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_MailleVest" or
-                  defName="TA_MailleHoses" or
-                  defName="TA_MailleMittens"
+                  defName="TA_BrigandineFullHarness" or
+                  defName="TA_PlateFullHarness"
 			]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
-			<StuffEffectMultiplierArmor>0.53</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[
-                  defName="TA_PlateBoots" or
-				  defName="TA_PlateMittens"
+                  defName="TA_BrigandineVest" or
+				  defName="TA_PlateCuirass"
 			]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_ReinforcedGambeson"
+			]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
       
