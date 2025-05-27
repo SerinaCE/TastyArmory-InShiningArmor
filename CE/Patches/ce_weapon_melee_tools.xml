@@ -86,7 +86,7 @@
 		</value>
 	</Operation>
 
-	<!--T_Pollaxe-->
+	<!--TA_Pollaxe-->
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ThingDef[defName="TA_Pollaxe"]/tools</xpath>
 		<value>
