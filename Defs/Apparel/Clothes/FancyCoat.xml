@@ -31,8 +31,8 @@
 			<Bulk MayRequire="CETeam.CombatExtended">3</Bulk>
 			<Mass>2</Mass>
 			<StuffEffectMultiplierArmor>5</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
 		<thingCategories>

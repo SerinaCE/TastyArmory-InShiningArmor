@@ -184,7 +184,7 @@
 
 	<!--TA_Warhammer-->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="TA_Warhammer"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -220,49 +220,6 @@
 					<armorPenetrationBlunt>6.5</armorPenetrationBlunt>
 					<armorPenetrationSharp>2.7</armorPenetrationSharp>
 					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				</li>
-			</tools>
-		</value>
-	</Operation>
-
-	<!--TA_Pike-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="TA_HorsemansAxe"]/tools</xpath>
-		<value>
-			<tools>
-				<li Class="CombatExtended.ToolCE">
-					<label>shaft</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>7</power>
-					<cooldownTime>2.30</cooldownTime>
-					<chanceFactor>0.15</chanceFactor>
-					<armorPenetrationBlunt>2.25</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>shaft</label>
-					<capacities>
-						<li>Poke</li>
-					</capacities>
-					<power>4</power>
-					<cooldownTime>1.79</cooldownTime>
-					<chanceFactor>0.05</chanceFactor>
-					<armorPenetrationBlunt>1</armorPenetrationBlunt>
-					<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-				</li>
-				<li Class="CombatExtended.ToolCE">
-					<label>head</label>
-					<capacities>
-						<li>Stab</li>
-					</capacities>
-					<power>29</power>
-					<cooldownTime>1.9</cooldownTime>
-					<chanceFactor>0.90</chanceFactor>
-					<armorPenetrationBlunt>4</armorPenetrationBlunt>
-					<armorPenetrationSharp>2.75</armorPenetrationSharp>
-					<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 				</li>
 			</tools>
 		</value>
