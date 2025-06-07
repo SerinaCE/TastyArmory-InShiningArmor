@@ -86,6 +86,7 @@
 			<li>MedievalRangedAdvanced</li>
 			<li>Bipod_AMR</li>
 		</weaponTags>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 	</Operation>
 
 	<!--Handgonne-->
@@ -123,6 +124,7 @@
 			<li>NeolithicRangedDecent</li>
 			<li>MedievalRangedAdvanced</li>
 		</weaponTags>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>
 	</Operation>
 
 	<!--Melee tools-->
