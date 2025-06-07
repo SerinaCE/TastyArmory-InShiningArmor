@@ -2,7 +2,7 @@
 <Defs>
 	
 	<ThingDef ParentName="ShieldBase">
-		<defName>TA_TA_HeaterShield</defName>
+		<defName>TA_HeaterShield</defName>
 		<label>heater shield</label>
 		<description>Simple shield that can block simple projectiles and hits with melee weapons.</description>
 		<graphicData>
