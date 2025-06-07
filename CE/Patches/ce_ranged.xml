@@ -67,7 +67,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_75CalBall370mps</defaultProjectile>
 			<warmupTime>1.7</warmupTime>
-			<range>25</range>
+			<range>32</range>
 			<soundCast>Shot_CE_Musket</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -105,7 +105,7 @@
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>Bullet_SlowMusketBall</defaultProjectile>
 			<warmupTime>1.1</warmupTime>
-			<range>20</range>
+			<range>18</range>
 			<soundCast>Shot_CE_Musket</soundCast>
 			<soundCastTail>GunTail_Light</soundCastTail>
 			<muzzleFlashScale>9</muzzleFlashScale>
