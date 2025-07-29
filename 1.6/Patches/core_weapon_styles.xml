@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--Longsword-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]/graphicData</xpath>
+		<value>
+		<graphicData>
+			<texPath>Weapons/Melee/TA_Longsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]/equippedAngleOffset</xpath>
+		<value>
+			<equippedAngleOffset>-25</equippedAngleOffset>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]</xpath>
+		<value>
+			<randomStyleChance>0.35</randomStyleChance>
+			<randomStyle>
+				<li>
+					<chance>3</chance>
+					<styleDef>TA_Kriegsmesser</styleDef>
+				</li>
+				<li>
+					<chance>2</chance>
+					<styleDef>TA_Estoc</styleDef>
+				</li>
+			</randomStyle>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs</xpath>
+		<value>
+			<ThingStyleDef>
+				<defName>TA_Kriegsmesser</defName>
+				<overrideLabel>Kriegsmesser</overrideLabel>
+				<graphicData>
+					<texPath>Weapons/Melee/TA_Kriegsmesser</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+				</graphicData>
+			</ThingStyleDef>
+			<ThingStyleDef>
+				<defName>TA_Estoc</defName>
+				<overrideLabel>estoc</overrideLabel>
+				<graphicData>
+					<texPath>Weapons/Melee/TA_Estoc</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+			</ThingStyleDef>
+		</value>
+	</Operation>
+
+	<!--TA_CutAndThrustPolearm-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Mace"]</xpath>
+		<value>
+			<randomStyleChance>0.66</randomStyleChance>
+			<randomStyle>
+				<li>
+					<chance>2</chance>
+					<styleDef>TA_FlangedMace</styleDef>
+				</li>
+				<li>
+					<chance>1</chance>
+					<styleDef>TA_Morningstar</styleDef>
+				</li>
+			</randomStyle>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs</xpath>
+		<value>
+			<ThingStyleDef>
+				<defName>TA_FlangedMace</defName>
+				<graphicData>
+					<texPath>Weapons/Melee/TA_FlangedMace</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+				</graphicData>
+			</ThingStyleDef>
+			<ThingStyleDef>
+				<defName>TA_Morningstar</defName>
+				<overrideLabel>morningstar</overrideLabel>
+				<graphicData>
+					<texPath>Weapons/Melee/TA_Morningstar</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+				</graphicData>
+			</ThingStyleDef>
+		</value>
+	</Operation>
+
+</Patch>

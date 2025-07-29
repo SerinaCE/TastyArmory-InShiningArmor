@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+                  defName="TA_BrigandineVest" or
+                  defName="TA_BrigandineFullHarness" or
+                  defName="TA_PlateCuirass" or
+                  defName="TA_PlateFullHarness" or
+                  @Name="TA_Armet_Visor" or
+                  @Name="TA_Bascinet_Visor" or
+                  @Name="TA_Sallet_Visor" or
+                  defName="TA_OpenFaceHelmet"
+			]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+				<li>Steeled</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+      <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+            defName="TA_CutAndThrustPolearm" or
+            defName="TA_Pike" or
+            defName="TA_Pollaxe" or
+            defName="TA_SingleEdgeSword" or
+            defName="TA_Warhammer"]/stuffCategories</xpath>
+		<value>
+			<stuffCategories>
+                <li>Metallic_Weapon</li>
+			</stuffCategories>
+		</value>
+	</Operation>
+
+      
+</Patch>

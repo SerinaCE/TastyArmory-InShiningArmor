@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>TA_OpenSallet</defName>
+		<overrideLabel>open sallet</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_OpenSallet</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_OpenSallet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_KettleHatA</defName>
+		<overrideLabel>kettle hat</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatA</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatA_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef>
+		<defName>TA_KettleHatB</defName>
+		<overrideLabel>kettle hat</overrideLabel>
+		<wornGraphicPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatB</wornGraphicPath>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_KettleHatB_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TA_OpenFaceHelmet</defName>
+		<label>open face helmet</label>
+		<description>Simple steel helmet with a wide brim, protects face from overhead blows while leaving good visibility.</description>
+		<graphicData>
+			<texPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_OpenSallet_ico</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li>
+				<chance>3</chance>
+				<styleDef>TA_OpenSallet</styleDef>
+			</li>
+			<li>
+				<chance>2</chance>
+				<styleDef>TA_KettleHatA</styleDef>
+			</li>
+			<li>
+				<chance>2</chance>
+				<styleDef>TA_KettleHatB</styleDef>
+			</li>
+		</randomStyle>
+		<possessionCount>1</possessionCount>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>135</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Bulk MayRequire="CETeam.CombatExtended">6</Bulk>
+			<Mass>1.4</Mass>
+			<StuffEffectMultiplierArmor>2.3</StuffEffectMultiplierArmor>
+			<Insulation_Cold>4</Insulation_Cold>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets/>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+      <parentTagDef>ApparelHead</parentTagDef>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Helmets/TA_OpenFaceHelmet/TA_OpenSallet_ico</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>MedievalMilitary</li>
+				<li>MedievalArmorBasic</li>
+				<li>MedievalArmorDecent</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<modExtensions>
+			<li Class="CombatExtended.PartialArmorExt" MayRequire="CETeam.CombatExtended">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</modExtensions>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>Clothing</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
