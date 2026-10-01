@@ -34,7 +34,7 @@
 			<ArmorRating_Blunt MayRequire="CETeam.CombatExtended">0.8</ArmorRating_Blunt>
 			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>6</EquipDelay>
+			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<SocialImpact>0.08</SocialImpact>
