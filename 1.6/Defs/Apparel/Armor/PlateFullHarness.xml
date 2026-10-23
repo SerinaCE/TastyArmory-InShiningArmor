@@ -40,9 +40,9 @@
 			</thingCategories>
 			<apparel>
 				<drawData>
-					<defaultData>
+					<!--defaultData>
 						<layer>23</layer>
-					</defaultData>
+					</defaultData-->
 				</drawData>
 				<bodyPartGroups>
 					<li>Torso</li>
